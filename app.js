@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const taskRoutes = require('./api/routes/task');
 
 const userRoutes = require('./api/routes/user');
-
+console.log('mongodb://' + process.env.MONGO_DB_US + ':' + process.env.MONGO_DB_PW + '@ds247479.mlab.com:47479/todo-rawengg');
 mongoose.connect('mongodb://' + process.env.MONGO_DB_US + ':' + process.env.MONGO_DB_PW + '@ds247479.mlab.com:47479/todo-rawengg', {
     useCreateIndex: true,
     useNewUrlParser: true
